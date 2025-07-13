@@ -1,2 +1,5 @@
+from UI import downloader
+
 if __name__ == "__main__":
-	print("The software starts.")
+	downloader = downloader.Downloader()
+	downloader.start()
