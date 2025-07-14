@@ -2,6 +2,8 @@ import subprocess
 import logging
 import tkinter as tk
 
+APPLICATION_NAME = "Marco's Super Awesome Music Downloader"
+
 WINDOW_WIDTH = 960
 WINDOW_HEIGHT = 540
 
@@ -11,6 +13,7 @@ class Downloader:
         self.__root = tk.Tk()
         self.__root.minsize(WINDOW_WIDTH,WINDOW_HEIGHT)
         self.__root.maxsize(WINDOW_WIDTH,WINDOW_HEIGHT)
+        self.__root.title(APPLICATION_NAME)
 
 
         # Calculating some coordinates to center the window frame in the middle of computer screen
