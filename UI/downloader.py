@@ -1,5 +1,6 @@
 import subprocess
 import logging
+import os
 import tkinter as tk
 
 APPLICATION_NAME = "Marco's Super Awesome Music Downloader"
@@ -14,6 +15,8 @@ class Downloader:
         self.__root.minsize(WINDOW_WIDTH,WINDOW_HEIGHT)
         self.__root.maxsize(WINDOW_WIDTH,WINDOW_HEIGHT)
         self.__root.title(APPLICATION_NAME)
+        icon=tk.PhotoImage(file="UI/flag.png")
+        self.__root.iconphoto(True,icon)
 
 
         # Calculating some coordinates to center the window frame in the middle of computer screen
